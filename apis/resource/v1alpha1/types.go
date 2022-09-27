@@ -45,6 +45,7 @@ type HCPDeployment struct {
 }
 
 type HCPDeploymentSpec struct {
+	UUID                   int                   `json:"uuid"`
 	RealDeploymentSpec     appsv1.DeploymentSpec `json:"realDeploymentSpec"`
 	RealDeploymentMetadata metav1.ObjectMeta     `json:"metadata,omitempty"`
 
