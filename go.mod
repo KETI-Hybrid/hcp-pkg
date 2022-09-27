@@ -32,7 +32,7 @@ require (
 
 require github.com/pkg/errors v0.9.1 // indirect
 
-require github.com/KETI-Hybrid/hybridctl-v1 v0.0.0-20220921091710-d35ecc504062
+require github.com/KETI-Hybrid/hybridctl-v1 v0.0.0-20220927013413-ac2ba417be13
 
 require (
 	cloud.google.com/go/compute v1.7.0 // indirect
