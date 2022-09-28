@@ -29,7 +29,7 @@ func CreateNamespace(clientset *kubernetes.Clientset, namespace string) (*corev1
 			klog.Error(err)
 			return nil, err
 		} else {
-			klog.Info("success to create namespace %s\n", namespace)
+			klog.Infof("success to create namespace %s\n", namespace)
 			return ns, nil
 		}
 

@@ -21,7 +21,7 @@ func UpdateDeployment(clientset *kubernetes.Clientset, deployment *v1.Deployment
 			klog.Error(err)
 			return err
 		} else {
-			klog.Info("success to update %s [replicas : %d]\n", new_dep.Name, *deployment.Spec.Replicas)
+			klog.Infof("success to update %s [replicas : %d]\n", new_dep.Name, *deployment.Spec.Replicas)
 		}
 	} else {
 		klog.Info("deployment status is not stable")

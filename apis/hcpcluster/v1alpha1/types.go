@@ -15,11 +15,19 @@ type HCPCluster struct {
 }
 
 type HCPClusterSpec struct {
-	ClusterPlatform string `json:"platform"`
-	Region          string `json:"region"`
-	KubeconfigInfo  []byte `json:"kubeconfiginfo"`
-	JoinStatus      string `json:"joinstatus"`
+	ClusterPlatform string        `json:"platform"`
+	Region          string        `json:"region"`
+	KubeconfigInfo  []byte        `json:"kubeconfiginfo"`
+	JoinStatus      string        `json:"joinstatus"`
+	ResourcesUID    ResourcesKind `json:"resourceuid"`
 }
+
+type ResourcesKind struct {
+	HCPDeployment ResourcesUIDList `json:"hcpdeployment"`
+	HCPPod        ResourcesUIDList `json:"hcppod"`
+}
+
+type ResourcesUIDList []string
 
 type HCPClusterStatus struct {
 	// Join bool `json:"join"`

@@ -27,7 +27,7 @@ func GetDeployment(clientset *kubernetes.Clientset, deployment_name string, name
 	if err != nil {
 		klog.Error(err)
 	} else {
-		klog.Info("success to get deployment %s [replicas : %d]\n", d.Name, *d.Spec.Replicas)
+		klog.Infof("success to get deployment %s [replicas : %d]\n", d.Name, *d.Spec.Replicas)
 	}
 	return d, err
 }
@@ -38,7 +38,7 @@ func GetDeploymentFromPod(clientset *kubernetes.Clientset, pod *corev1.Pod) (*v1
 	if err != nil {
 		klog.Error(err)
 	} else {
-		klog.Info("success to get deployment %s [replicas : %d]\n", d.Name, *d.Spec.Replicas)
+		klog.Infof("success to get deployment %s [replicas : %d]\n", d.Name, *d.Spec.Replicas)
 	}
 	return d, err
 }

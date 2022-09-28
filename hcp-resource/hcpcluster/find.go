@@ -16,12 +16,12 @@ func FindHCPClusterList(clientset *hcpclusterv1alpha1.Clientset, cluster string)
 	} else {
 		for _, c := range cluster_list.Items {
 			if c.ObjectMeta.Name == cluster {
-				klog.Info("Find %s in HCPClusterList\n", cluster)
+				klog.Infof("Find %s in HCPClusterList\n", cluster)
 				return true
 			}
 		}
 	}
-	klog.Info("Fail to find %s in HCPClusterList\n", cluster)
+	klog.Infof("Fail to find %s in HCPClusterList\n", cluster)
 	klog.Info("You should register your cluster to HCP\n")
 	return false
 }

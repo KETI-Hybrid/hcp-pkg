@@ -16,7 +16,7 @@ func GetPod(clientset *kubernetes.Clientset, pod string, pod_namespace string) (
 		klog.Error(err)
 		return p, err
 	} else {
-		klog.Info("success to get pod %s [cluster %s, node %s]\n", p.Name, p.ClusterName, p.Spec.NodeName)
+		klog.Infof("success to get pod %s [cluster %s, node %s]\n", p.Name, p.ClusterName, p.Spec.NodeName)
 		return p, err
 	}
 }

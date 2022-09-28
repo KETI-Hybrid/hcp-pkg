@@ -128,7 +128,7 @@ func GetCycle(clientset hcppolicyv1alpha1.Clientset) float64 {
 			cycle, err := strconv.ParseFloat(policy.Value[0], 64)
 			if err == nil && cycle > 0 {
 				klog.Info("Policy Type : ", "cycle")
-				klog.Info("Policy Value [cycle] : ", cycle)
+				klog.Infof("Policy Value [cycle] : ", cycle)
 				return cycle
 			}
 		}
