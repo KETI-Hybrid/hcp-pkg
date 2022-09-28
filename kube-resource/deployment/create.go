@@ -2,6 +2,7 @@ package deployment
 
 import (
 	"context"
+	"fmt"
 	"strconv"
 
 	"github.com/KETI-Hybrid/hcp-pkg/util/clusterManager"
@@ -44,13 +45,17 @@ func DeployDeploymentFromHCPDeployment(hcp_resource *resourcev1alpha1apis.HCPDep
 
 	// uid 생성
 	uid := uuid.ClockSequence()
+	klog.Info(uid)
 	cm, _ := clusterManager.NewClusterManager()
 	targets := hcp_resource.Spec.SchedulingResult.Targets
 
 	// hcp_resource uid 설정
+	klog.Info(strconv.Itoa(uid))
 	hcp_resource.Spec.RealDeploymentMetadata.Labels["uuid"] = strconv.Itoa(uid)
 	hcp_resource.Spec.RealDeploymentSpec.Selector.MatchLabels["uuid"] = strconv.Itoa(uid)
+	hcp_resource.Spec.RealDeploymentSpec.Template.Labels["uuid"] = strconv.Itoa(uid)
 	spec := hcp_resource.Spec.RealDeploymentSpec
+	fmt.Println(hcp_resource)
 	metadata := hcp_resource.Spec.RealDeploymentMetadata
 
 	if metadata.Namespace == "" {

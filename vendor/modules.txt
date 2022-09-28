@@ -15,7 +15,7 @@ github.com/Jeffail/gabs
 # github.com/KETI-Hybrid/hcp-apiserver-v1 v0.0.0-20220921080754-59bf5a1498e9
 ## explicit; go 1.18
 github.com/KETI-Hybrid/hcp-apiserver-v1/pkg/util
-# github.com/KETI-Hybrid/hybridctl-v1 v0.0.0-20220921091710-d35ecc504062
+# github.com/KETI-Hybrid/hybridctl-v1 v0.0.0-20220927013413-ac2ba417be13
 ## explicit; go 1.18
 github.com/KETI-Hybrid/hybridctl-v1/util
 # github.com/aws/aws-sdk-go v1.44.102
@@ -95,13 +95,6 @@ github.com/golang/protobuf/ptypes
 github.com/golang/protobuf/ptypes/any
 github.com/golang/protobuf/ptypes/duration
 github.com/golang/protobuf/ptypes/timestamp
-# github.com/google/gnostic v0.5.7-v3refs
-## explicit; go 1.12
-github.com/google/gnostic/compiler
-github.com/google/gnostic/extensions
-github.com/google/gnostic/jsonschema
-github.com/google/gnostic/openapiv2
-github.com/google/gnostic/openapiv3
 # github.com/google/go-cmp v0.5.8
 ## explicit; go 1.13
 github.com/google/go-cmp/cmp
@@ -613,8 +606,8 @@ k8s.io/klog
 # k8s.io/klog/v2 v2.80.1 => k8s.io/klog/v2 v2.9.0
 ## explicit; go 1.13
 k8s.io/klog/v2
-# k8s.io/kube-openapi v0.0.0-20220803162953-67bda5d908f1
-## explicit; go 1.18
+# k8s.io/kube-openapi v0.0.0-20220803162953-67bda5d908f1 => k8s.io/kube-openapi v0.0.0-20211115234752-e816edb12b65
+## explicit; go 1.16
 k8s.io/kube-openapi/pkg/util/proto
 # k8s.io/utils v0.0.0-20220728103510-ee6ede2d64ed
 ## explicit; go 1.12
@@ -679,6 +672,7 @@ sigs.k8s.io/yaml
 # k8s.io/klog/v2 => k8s.io/klog/v2 v2.9.0
 # k8s.io/kube-aggregator => k8s.io/kube-aggregator v0.23.4
 # k8s.io/kube-controller-manager => k8s.io/kube-controller-manager v0.23.4
+# k8s.io/kube-openapi => k8s.io/kube-openapi v0.0.0-20211115234752-e816edb12b65
 # k8s.io/kube-proxy => k8s.io/kube-proxy v0.23.4
 # k8s.io/kube-scheduler => k8s.io/kube-scheduler v0.23.4
 # k8s.io/kubectl => k8s.io/kubectl v0.23.4
