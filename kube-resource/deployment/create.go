@@ -2,7 +2,6 @@ package deployment
 
 import (
 	"context"
-	"fmt"
 	"strconv"
 
 	"github.com/KETI-Hybrid/hcp-pkg/util/clusterManager"
@@ -35,7 +34,7 @@ func CreateDeployment(clientset *kubernetes.Clientset, node string, deployment *
 		klog.Error(err)
 		return err
 	} else {
-		klog.Info("success to create %s [replicas : %d]\n", new_dep.Name, *deployment.Spec.Replicas)
+		klog.Infof("success to create %s [replicas : %d]\n", new_dep.Name, *deployment.Spec.Replicas)
 	}
 
 	return nil
@@ -45,17 +44,14 @@ func DeployDeploymentFromHCPDeployment(hcp_resource *resourcev1alpha1apis.HCPDep
 
 	// uid 생성
 	uid := uuid.ClockSequence()
-	klog.Info(uid)
 	cm, _ := clusterManager.NewClusterManager()
 	targets := hcp_resource.Spec.SchedulingResult.Targets
 
 	// hcp_resource uid 설정
-	klog.Info(strconv.Itoa(uid))
 	hcp_resource.Spec.RealDeploymentMetadata.Labels["uuid"] = strconv.Itoa(uid)
 	hcp_resource.Spec.RealDeploymentSpec.Selector.MatchLabels["uuid"] = strconv.Itoa(uid)
 	hcp_resource.Spec.RealDeploymentSpec.Template.Labels["uuid"] = strconv.Itoa(uid)
 	spec := hcp_resource.Spec.RealDeploymentSpec
-	fmt.Println(hcp_resource)
 	metadata := hcp_resource.Spec.RealDeploymentMetadata
 
 	if metadata.Namespace == "" {
@@ -81,7 +77,7 @@ func DeployDeploymentFromHCPDeployment(hcp_resource *resourcev1alpha1apis.HCPDep
 			klog.Error(err)
 			return -1, false
 		} else {
-			klog.Info("succeed to deploy deployment %s in %s\n", r.ObjectMeta.Name, target.Cluster)
+			klog.Infof("succeed to deploy deployment %s in %s\n", r.ObjectMeta.Name, target.Cluster)
 		}
 	}
 	return uid, true
