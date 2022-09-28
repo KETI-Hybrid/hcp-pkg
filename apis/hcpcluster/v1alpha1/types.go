@@ -19,7 +19,7 @@ type HCPClusterSpec struct {
 	Region          string        `json:"region"`
 	KubeconfigInfo  []byte        `json:"kubeconfiginfo"`
 	JoinStatus      string        `json:"joinstatus"`
-	ResourcesUID    ResourcesKind `json:"resourceuid"`
+	ResourcesUID    ResourcesKind `json:"resourcesuid"`
 }
 
 type ResourcesKind struct {
