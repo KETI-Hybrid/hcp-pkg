@@ -4,12 +4,13 @@ import (
 	"context"
 	"strconv"
 
-	"github.com/KETI-Hybrid/hcp-pkg/util/clusterManager"
+	"hcp-pkg/util/clusterManager"
+
 	"github.com/google/uuid"
 
-	resourcev1alpha1apis "github.com/KETI-Hybrid/hcp-pkg/apis/resource/v1alpha1"
+	resourcev1alpha1apis "hcp-pkg/apis/resource/v1alpha1"
 
-	ns "github.com/KETI-Hybrid/hcp-pkg/kube-resource/namespace"
+	ns "hcp-pkg/kube-resource/namespace"
 
 	appsv1 "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

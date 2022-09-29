@@ -19,8 +19,8 @@ limitations under the License.
 package v1beta2
 
 import (
-	v1beta2 "github.com/KETI-Hybrid/hcp-pkg/apis/vpa/v1beta2"
-	scheme "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1beta2/clientset/versioned/scheme"
+	v1beta2 "hcp-pkg/apis/vpa/v1beta2"
+	scheme "hcp-pkg/client/vpa/v1beta2/clientset/versioned/scheme"
 	"context"
 	"time"
 

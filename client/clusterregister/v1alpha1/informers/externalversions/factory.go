@@ -19,9 +19,9 @@ limitations under the License.
 package externalversions
 
 import (
-	versioned "github.com/KETI-Hybrid/hcp-pkg/client/clusterregister/v1alpha1/clientset/versioned"
-	clusterregister "github.com/KETI-Hybrid/hcp-pkg/client/clusterregister/v1alpha1/informers/externalversions/clusterregister"
-	internalinterfaces "github.com/KETI-Hybrid/hcp-pkg/client/clusterregister/v1alpha1/informers/externalversions/internalinterfaces"
+	versioned "hcp-pkg/client/clusterregister/v1alpha1/clientset/versioned"
+	clusterregister "hcp-pkg/client/clusterregister/v1alpha1/informers/externalversions/clusterregister"
+	internalinterfaces "hcp-pkg/client/clusterregister/v1alpha1/informers/externalversions/internalinterfaces"
 	reflect "reflect"
 	sync "sync"
 	time "time"

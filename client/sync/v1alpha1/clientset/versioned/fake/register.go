@@ -19,7 +19,7 @@ limitations under the License.
 package fake
 
 import (
-	hcpv1alpha1 "github.com/KETI-Hybrid/hcp-pkg/apis/sync/v1alpha1"
+	hcpv1alpha1 "hcp-pkg/apis/sync/v1alpha1"
 
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"

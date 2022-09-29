@@ -19,8 +19,8 @@ limitations under the License.
 package sync
 
 import (
-	internalinterfaces "github.com/KETI-Hybrid/hcp-pkg/client/sync/v1alpha1/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/KETI-Hybrid/hcp-pkg/client/sync/v1alpha1/informers/externalversions/sync/v1alpha1"
+	internalinterfaces "hcp-pkg/client/sync/v1alpha1/informers/externalversions/internalinterfaces"
+	v1alpha1 "hcp-pkg/client/sync/v1alpha1/informers/externalversions/sync/v1alpha1"
 )
 
 // Interface provides access to each of this group's versions.

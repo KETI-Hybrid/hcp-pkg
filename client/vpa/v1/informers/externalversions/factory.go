@@ -19,9 +19,9 @@ limitations under the License.
 package externalversions
 
 import (
-	versioned "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1/clientset/versioned"
-	autoscalingk8sio "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1/informers/externalversions/autoscaling.k8s.io"
-	internalinterfaces "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1/informers/externalversions/internalinterfaces"
+	versioned "hcp-pkg/client/vpa/v1/clientset/versioned"
+	autoscalingk8sio "hcp-pkg/client/vpa/v1/informers/externalversions/autoscaling.k8s.io"
+	internalinterfaces "hcp-pkg/client/vpa/v1/informers/externalversions/internalinterfaces"
 	reflect "reflect"
 	sync "sync"
 	time "time"

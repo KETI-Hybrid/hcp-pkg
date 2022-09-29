@@ -19,7 +19,7 @@ limitations under the License.
 package v1
 
 import (
-	v1 "github.com/KETI-Hybrid/hcp-pkg/apis/vpa/v1"
+	v1 "hcp-pkg/apis/vpa/v1"
 
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"

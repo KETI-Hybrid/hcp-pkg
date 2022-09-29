@@ -19,10 +19,10 @@ limitations under the License.
 package v1alpha1
 
 import (
-	hcppolicyv1alpha1 "github.com/KETI-Hybrid/hcp-pkg/apis/hcppolicy/v1alpha1"
-	versioned "github.com/KETI-Hybrid/hcp-pkg/client/hcppolicy/v1alpha1/clientset/versioned"
-	internalinterfaces "github.com/KETI-Hybrid/hcp-pkg/client/hcppolicy/v1alpha1/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/KETI-Hybrid/hcp-pkg/client/hcppolicy/v1alpha1/listers/hcppolicy/v1alpha1"
+	hcppolicyv1alpha1 "hcp-pkg/apis/hcppolicy/v1alpha1"
+	versioned "hcp-pkg/client/hcppolicy/v1alpha1/clientset/versioned"
+	internalinterfaces "hcp-pkg/client/hcppolicy/v1alpha1/informers/externalversions/internalinterfaces"
+	v1alpha1 "hcp-pkg/client/hcppolicy/v1alpha1/listers/hcppolicy/v1alpha1"
 	"context"
 	time "time"
 

@@ -19,7 +19,7 @@ limitations under the License.
 package fake
 
 import (
-	v1alpha1 "github.com/KETI-Hybrid/hcp-pkg/client/kubefedcluster/v1alpha1/clientset/versioned/typed/kubefedcluster/v1alpha1"
+	v1alpha1 "hcp-pkg/client/kubefedcluster/v1alpha1/clientset/versioned/typed/kubefedcluster/v1alpha1"
 
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"

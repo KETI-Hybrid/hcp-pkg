@@ -19,7 +19,7 @@ limitations under the License.
 package v1alpha1
 
 import (
-	internalinterfaces "github.com/KETI-Hybrid/hcp-pkg/client/sync/v1alpha1/informers/externalversions/internalinterfaces"
+	internalinterfaces "hcp-pkg/client/sync/v1alpha1/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to all the informers in this group version.

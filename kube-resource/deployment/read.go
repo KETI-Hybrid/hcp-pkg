@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	resourcev1alpha1 "github.com/KETI-Hybrid/hcp-pkg/apis/resource/v1alpha1"
+	resourcev1alpha1 "hcp-pkg/apis/resource/v1alpha1"
 
 	appsv1 "k8s.io/api/apps/v1"
 	v1 "k8s.io/api/apps/v1"

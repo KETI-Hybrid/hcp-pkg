@@ -19,7 +19,7 @@ limitations under the License.
 package externalversions
 
 import (
-	v1beta2 "github.com/KETI-Hybrid/hcp-pkg/apis/vpa/v1beta2"
+	v1beta2 "hcp-pkg/apis/vpa/v1beta2"
 	"fmt"
 
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

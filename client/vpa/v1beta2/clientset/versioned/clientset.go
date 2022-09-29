@@ -19,7 +19,7 @@ limitations under the License.
 package versioned
 
 import (
-	autoscalingv1beta2 "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1beta2/clientset/versioned/typed/vpa/v1beta2"
+	autoscalingv1beta2 "hcp-pkg/client/vpa/v1beta2/clientset/versioned/typed/vpa/v1beta2"
 	"fmt"
 
 	discovery "k8s.io/client-go/discovery"

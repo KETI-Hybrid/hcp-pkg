@@ -19,10 +19,10 @@ limitations under the License.
 package v1alpha1
 
 import (
-	clusterregisterv1alpha1 "github.com/KETI-Hybrid/hcp-pkg/apis/clusterregister/v1alpha1"
-	versioned "github.com/KETI-Hybrid/hcp-pkg/client/clusterregister/v1alpha1/clientset/versioned"
-	internalinterfaces "github.com/KETI-Hybrid/hcp-pkg/client/clusterregister/v1alpha1/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/KETI-Hybrid/hcp-pkg/client/clusterregister/v1alpha1/listers/clusterregister/v1alpha1"
+	clusterregisterv1alpha1 "hcp-pkg/apis/clusterregister/v1alpha1"
+	versioned "hcp-pkg/client/clusterregister/v1alpha1/clientset/versioned"
+	internalinterfaces "hcp-pkg/client/clusterregister/v1alpha1/informers/externalversions/internalinterfaces"
+	v1alpha1 "hcp-pkg/client/clusterregister/v1alpha1/listers/clusterregister/v1alpha1"
 	"context"
 	time "time"
 

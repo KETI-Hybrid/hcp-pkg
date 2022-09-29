@@ -19,7 +19,7 @@ limitations under the License.
 package v1
 
 import (
-	internalinterfaces "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1/informers/externalversions/internalinterfaces"
+	internalinterfaces "hcp-pkg/client/vpa/v1/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to all the informers in this group version.

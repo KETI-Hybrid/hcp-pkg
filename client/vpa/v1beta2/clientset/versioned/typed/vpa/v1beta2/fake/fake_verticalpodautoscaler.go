@@ -19,7 +19,7 @@ limitations under the License.
 package fake
 
 import (
-	v1beta2 "github.com/KETI-Hybrid/hcp-pkg/apis/vpa/v1beta2"
+	v1beta2 "hcp-pkg/apis/vpa/v1beta2"
 	"context"
 
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"

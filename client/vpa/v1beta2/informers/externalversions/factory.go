@@ -19,9 +19,9 @@ limitations under the License.
 package externalversions
 
 import (
-	versioned "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1beta2/clientset/versioned"
-	internalinterfaces "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1beta2/informers/externalversions/internalinterfaces"
-	vpa "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1beta2/informers/externalversions/vpa"
+	versioned "hcp-pkg/client/vpa/v1beta2/clientset/versioned"
+	internalinterfaces "hcp-pkg/client/vpa/v1beta2/informers/externalversions/internalinterfaces"
+	vpa "hcp-pkg/client/vpa/v1beta2/informers/externalversions/vpa"
 	reflect "reflect"
 	sync "sync"
 	time "time"

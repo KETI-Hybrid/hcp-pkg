@@ -19,9 +19,9 @@ limitations under the License.
 package externalversions
 
 import (
-	versioned "github.com/KETI-Hybrid/hcp-pkg/client/kubefedcluster/v1alpha1/clientset/versioned"
-	internalinterfaces "github.com/KETI-Hybrid/hcp-pkg/client/kubefedcluster/v1alpha1/informers/externalversions/internalinterfaces"
-	kubefedcluster "github.com/KETI-Hybrid/hcp-pkg/client/kubefedcluster/v1alpha1/informers/externalversions/kubefedcluster"
+	versioned "hcp-pkg/client/kubefedcluster/v1alpha1/clientset/versioned"
+	internalinterfaces "hcp-pkg/client/kubefedcluster/v1alpha1/informers/externalversions/internalinterfaces"
+	kubefedcluster "hcp-pkg/client/kubefedcluster/v1alpha1/informers/externalversions/kubefedcluster"
 	reflect "reflect"
 	sync "sync"
 	time "time"

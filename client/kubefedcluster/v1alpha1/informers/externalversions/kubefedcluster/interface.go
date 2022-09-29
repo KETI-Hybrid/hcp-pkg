@@ -19,8 +19,8 @@ limitations under the License.
 package kubefedcluster
 
 import (
-	internalinterfaces "github.com/KETI-Hybrid/hcp-pkg/client/kubefedcluster/v1alpha1/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/KETI-Hybrid/hcp-pkg/client/kubefedcluster/v1alpha1/informers/externalversions/kubefedcluster/v1alpha1"
+	internalinterfaces "hcp-pkg/client/kubefedcluster/v1alpha1/informers/externalversions/internalinterfaces"
+	v1alpha1 "hcp-pkg/client/kubefedcluster/v1alpha1/informers/externalversions/kubefedcluster/v1alpha1"
 )
 
 // Interface provides access to each of this group's versions.

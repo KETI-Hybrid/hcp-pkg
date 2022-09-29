@@ -1,4 +1,4 @@
-module github.com/KETI-Hybrid/hcp-pkg
+module hcp-pkg
 
 go 1.18
 
@@ -40,6 +40,7 @@ require (
 require (
 	cloud.google.com/go/compute v1.7.0 // indirect
 	github.com/KETI-Hybrid/hcp-apiserver-v1 v0.0.0-20220921080754-59bf5a1498e9 // indirect
+	github.com/KETI-Hybrid/hcp-pkg v0.0.0-20220921091158-1f12b82c2bd5 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect

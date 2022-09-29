@@ -19,8 +19,8 @@ limitations under the License.
 package v1alpha1
 
 import (
-	v1alpha1 "github.com/KETI-Hybrid/hcp-pkg/apis/resource/v1alpha1"
-	scheme "github.com/KETI-Hybrid/hcp-pkg/client/resource/v1alpha1/clientset/versioned/scheme"
+	v1alpha1 "hcp-pkg/apis/resource/v1alpha1"
+	scheme "hcp-pkg/client/resource/v1alpha1/clientset/versioned/scheme"
 	"context"
 	"time"
 

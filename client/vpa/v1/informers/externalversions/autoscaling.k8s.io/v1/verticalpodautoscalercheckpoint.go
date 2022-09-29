@@ -19,10 +19,10 @@ limitations under the License.
 package v1
 
 import (
-	autoscalingk8siov1 "github.com/KETI-Hybrid/hcp-pkg/apis/vpa/v1"
-	versioned "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1/clientset/versioned"
-	internalinterfaces "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1/informers/externalversions/internalinterfaces"
-	v1 "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1/listers/autoscaling.k8s.io/v1"
+	autoscalingk8siov1 "hcp-pkg/apis/vpa/v1"
+	versioned "hcp-pkg/client/vpa/v1/clientset/versioned"
+	internalinterfaces "hcp-pkg/client/vpa/v1/informers/externalversions/internalinterfaces"
+	v1 "hcp-pkg/client/vpa/v1/listers/autoscaling.k8s.io/v1"
 	"context"
 	time "time"
 

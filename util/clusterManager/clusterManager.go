@@ -6,9 +6,9 @@ import (
 	"context"
 	"fmt"
 
-	hcpclusterv1alpha1 "github.com/KETI-Hybrid/hcp-pkg/client/hcpcluster/v1alpha1/clientset/versioned"
-	hcppolicyv1alpha1 "github.com/KETI-Hybrid/hcp-pkg/client/hcppolicy/v1alpha1/clientset/versioned"
-	resourcev1alpha1 "github.com/KETI-Hybrid/hcp-pkg/client/resource/v1alpha1/clientset/versioned"
+	hcpclusterv1alpha1 "hcp-pkg/client/hcpcluster/v1alpha1/clientset/versioned"
+	hcppolicyv1alpha1 "hcp-pkg/client/hcppolicy/v1alpha1/clientset/versioned"
+	resourcev1alpha1 "hcp-pkg/client/resource/v1alpha1/clientset/versioned"
 
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

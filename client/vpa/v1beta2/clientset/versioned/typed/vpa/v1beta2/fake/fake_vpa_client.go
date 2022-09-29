@@ -19,7 +19,7 @@ limitations under the License.
 package fake
 
 import (
-	v1beta2 "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1beta2/clientset/versioned/typed/vpa/v1beta2"
+	v1beta2 "hcp-pkg/client/vpa/v1beta2/clientset/versioned/typed/vpa/v1beta2"
 
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"

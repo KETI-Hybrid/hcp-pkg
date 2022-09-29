@@ -19,10 +19,10 @@ limitations under the License.
 package v1beta2
 
 import (
-	vpav1beta2 "github.com/KETI-Hybrid/hcp-pkg/apis/vpa/v1beta2"
-	versioned "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1beta2/clientset/versioned"
-	internalinterfaces "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1beta2/informers/externalversions/internalinterfaces"
-	v1beta2 "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1beta2/listers/vpa/v1beta2"
+	vpav1beta2 "hcp-pkg/apis/vpa/v1beta2"
+	versioned "hcp-pkg/client/vpa/v1beta2/clientset/versioned"
+	internalinterfaces "hcp-pkg/client/vpa/v1beta2/informers/externalversions/internalinterfaces"
+	v1beta2 "hcp-pkg/client/vpa/v1beta2/listers/vpa/v1beta2"
 	"context"
 	time "time"
 

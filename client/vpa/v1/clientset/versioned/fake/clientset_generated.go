@@ -19,9 +19,9 @@ limitations under the License.
 package fake
 
 import (
-	clientset "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1/clientset/versioned"
-	autoscalingv1 "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1/clientset/versioned/typed/autoscaling.k8s.io/v1"
-	fakeautoscalingv1 "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1/clientset/versioned/typed/autoscaling.k8s.io/v1/fake"
+	clientset "hcp-pkg/client/vpa/v1/clientset/versioned"
+	autoscalingv1 "hcp-pkg/client/vpa/v1/clientset/versioned/typed/autoscaling.k8s.io/v1"
+	fakeautoscalingv1 "hcp-pkg/client/vpa/v1/clientset/versioned/typed/autoscaling.k8s.io/v1/fake"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"

@@ -19,7 +19,7 @@ limitations under the License.
 package fake
 
 import (
-	v1 "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1/clientset/versioned/typed/autoscaling.k8s.io/v1"
+	v1 "hcp-pkg/client/vpa/v1/clientset/versioned/typed/autoscaling.k8s.io/v1"
 
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"

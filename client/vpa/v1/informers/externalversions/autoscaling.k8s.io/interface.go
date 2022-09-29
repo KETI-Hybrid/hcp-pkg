@@ -19,8 +19,8 @@ limitations under the License.
 package autoscaling
 
 import (
-	v1 "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1/informers/externalversions/autoscaling.k8s.io/v1"
-	internalinterfaces "github.com/KETI-Hybrid/hcp-pkg/client/vpa/v1/informers/externalversions/internalinterfaces"
+	v1 "hcp-pkg/client/vpa/v1/informers/externalversions/autoscaling.k8s.io/v1"
+	internalinterfaces "hcp-pkg/client/vpa/v1/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.
