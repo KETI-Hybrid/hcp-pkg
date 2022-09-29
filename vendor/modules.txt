@@ -15,15 +15,6 @@ github.com/Jeffail/gabs
 # github.com/KETI-Hybrid/hcp-apiserver-v1 v0.0.0-20220921080754-59bf5a1498e9
 ## explicit; go 1.18
 github.com/KETI-Hybrid/hcp-apiserver-v1/pkg/util
-# github.com/KETI-Hybrid/hcp-pkg v0.0.0-20220921091158-1f12b82c2bd5
-## explicit; go 1.18
-github.com/KETI-Hybrid/hcp-pkg/apis/hcpcluster/v1alpha1
-github.com/KETI-Hybrid/hcp-pkg/client/hcpcluster/v1alpha1/clientset/versioned
-github.com/KETI-Hybrid/hcp-pkg/client/hcpcluster/v1alpha1/clientset/versioned/scheme
-github.com/KETI-Hybrid/hcp-pkg/client/hcpcluster/v1alpha1/clientset/versioned/typed/hcpcluster/v1alpha1
-# github.com/KETI-Hybrid/hybridctl-v1 v0.0.0-20220927013413-ac2ba417be13
-## explicit; go 1.18
-github.com/KETI-Hybrid/hybridctl-v1/util
 # github.com/aws/aws-sdk-go v1.44.102
 ## explicit; go 1.11
 github.com/aws/aws-sdk-go/aws
@@ -361,6 +352,9 @@ gopkg.in/yaml.v2
 # gopkg.in/yaml.v3 v3.0.1
 ## explicit
 gopkg.in/yaml.v3
+# hybridctl v0.0.0 => ../hybridctl
+## explicit; go 1.18
+hybridctl/util
 # k8s.io/api v0.25.1 => k8s.io/api v0.23.4
 ## explicit; go 1.16
 k8s.io/api/admissionregistration/v1
@@ -661,6 +655,8 @@ sigs.k8s.io/structured-merge-diff/v4/value
 sigs.k8s.io/yaml
 # admiralty.io/multicluster-controller => admiralty.io/multicluster-controller v0.1.0
 # github.com/go-logr/logr => github.com/go-logr/logr v0.4.0
+# hcp-apiserver => ../hcp-apiserver
+# hybridctl => ../hybridctl
 # k8s.io/api => k8s.io/api v0.23.4
 # k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.22.4
 # k8s.io/apimachinery => k8s.io/apimachinery v0.22.4

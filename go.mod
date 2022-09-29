@@ -33,14 +33,13 @@ require (
 require github.com/pkg/errors v0.9.1 // indirect
 
 require (
-	github.com/KETI-Hybrid/hybridctl-v1 v0.0.0-20220927013413-ac2ba417be13
 	github.com/google/uuid v1.3.0
+	hybridctl v0.0.0
 )
 
 require (
 	cloud.google.com/go/compute v1.7.0 // indirect
 	github.com/KETI-Hybrid/hcp-apiserver-v1 v0.0.0-20220921080754-59bf5a1498e9 // indirect
-	github.com/KETI-Hybrid/hcp-pkg v0.0.0-20220921091158-1f12b82c2bd5 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -79,8 +78,11 @@ require (
 )
 
 replace (
+
 	admiralty.io/multicluster-controller => admiralty.io/multicluster-controller v0.1.0
 	github.com/go-logr/logr => github.com/go-logr/logr v0.4.0
+	hcp-apiserver => ../hcp-apiserver
+	hybridctl => ../hybridctl
 	// k8s.io/client-go => k8s.io/client-go v0.17.2
 	k8s.io/api => k8s.io/api v0.23.4
 
